@@ -6,7 +6,6 @@ type Props = {
     task: Task
     deleteTask: (a: number) => void,
 }
-
 const ListItem = ({task, deleteTask}: Props) => {
 
     const [duration, setDuration] = useState(Math.floor(moment.duration(moment().diff(moment(task.created))).asSeconds()))
