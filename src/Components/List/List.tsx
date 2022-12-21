@@ -23,7 +23,7 @@ const List = () => {
             {
                 id: tasks.length + 1,
                 created: moment(),
-                timeToDelete: randomIntFromInterval(5, 6),
+                timeToDelete: randomIntFromInterval(10, 30),
             }
         ])
 
